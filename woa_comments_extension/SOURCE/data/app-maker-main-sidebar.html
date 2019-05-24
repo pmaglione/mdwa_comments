@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <!-- JQUERY AND JQUERY UI -->
+        <link rel="stylesheet" href="lib/css/app-maker-main-sidebar.css">
+        <link rel="stylesheet" href="lib/css/jquery-ui.min.css"></link>
+        <link rel="stylesheet" href="lib/css/jquery-ui.structure.min.css"></link>
+        <link rel="stylesheet" href="lib/css/jquery-ui.theme.min.css"></link>
+        <script type="text/javascript" src="lib/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="lib/js/jquery-ui-1.11.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="lib/css/united.min.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-theme.min.css"></link>
+        <link rel="stylesheet" href="lib/css/bootstrap-tokenfield.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-toggle.min.css">
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap-tokenfield.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap-toggle.min.js"></script>
+        <!-- TAG IT -->
+        <link rel="stylesheet" href="lib/css/tag-it.css"></link>
+        <script type="text/javascript" src="lib/js/tag-it.js"></script>
+        <!-- XPATH MANAGEMENT (JUST FOR SIDEBAR SIDE) -->
+        <script type="text/javascript" src="lib/js/xpathManagement.js"></script>
+        <!-- SIDEBAR -->
+        <script type="text/javascript" src="lib/sidebar.js"></script>
+
+    </head>
+    <body>
+    	<div class="navbar-app-maker navbar navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <a href="../" class="navbar-brand">App setup</a>
+              
+            </div>
+          </div>
+        </div>
+        <ul class="nav nav-tabs tabs-with-fixed-top">
+            <li ><a href="#">Pages</a></li>
+            <li class="active"><a>Widgets</a>
+        </ul>
+        <div class="search-widgets-box container">
+            <div class="row">
+                <div class="col-sm-6 col-sm-offset-3">
+                    <div> 
+                        <div class="input-group stylish-input-group">
+                            <input type="text" class="form-control"  placeholder="Search" >
+                            <span class="input-group-addon">
+                                <button type="submit">
+                                    <span class="glyphicon glyphicon-search"></span>
+                                </button>  
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="fixed-side-column">
+					<div class="widget-categories btn-group-vertical" role="group" aria-label="...">
+			            <button type="button" class="btn btn-default">All</button>
+			            <button type="button" class="btn btn-default">Buttons</button>
+			            <button type="button" class="btn btn-default">Containers</button>
+			            <button type="button" class="btn btn-default">Forms</button>
+			            <button type="button" class="btn btn-default">Icons</button>
+			            <button type="button" class="btn btn-default">Misc</button>
+			            <button type="button" class="btn btn-default">Navigation</button>
+                        <button type="button" class="btn btn-default active">Recent</button>
+			        </div>
+				</div> 
+				<div class="fluid-middle-column">
+					<div id="widgets-list" class="row no-gutters">
+                        <!--<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+                            <a id="draggable" woa-template="<h1 contenteditable='true'>Title</h1>" class="thumbnail text-center" draggable="true" href="#" >
+                                <img class="woa-app-maker-thumbnail img-responsive" src="src/img/thumbnail.png" alt="">
+                                Title
+                            </a>
+                        </div> -->
+			        </div>
+				</div>
+			</div>
+		</div>     
+    </body>
+</html>

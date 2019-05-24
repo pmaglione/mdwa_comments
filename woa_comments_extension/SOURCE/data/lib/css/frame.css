@@ -1,0 +1,9 @@
+.no-background{
+	background-color: #fff0 !important;
+}
+.app-maker-toolbar-button{
+	border:none !important; 
+	background: none !important;
+	left-padding: 15px !important;
+	box-shadow: none !important;
+}

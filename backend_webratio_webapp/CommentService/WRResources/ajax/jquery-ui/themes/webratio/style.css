@@ -1,0 +1,61 @@
+/* Dialog */
+
+.ui-dialog {
+	font-family: inherit !important;
+	font-size: 1em !important;
+}
+
+.wr-waitDialog .ui-dialog-content {
+	text-align: center;
+}
+
+.wr-waitDialog .ui-dialog-content .progress {
+	height: 16px;
+	margin: .5em 0;
+	background: url('indicator.gif') no-repeat center;
+}
+
+/* Tooltip */
+
+.wr-tooltipTarget {
+	cursor: pointer;
+}
+
+.ui-wrTooltip-close {
+	position: absolute;
+	top: 0.2em; right: 0.2em;
+	width: 17px; height: 17px;
+    padding: 1px;
+    border: 1px solid transparent;
+}
+
+.ui-wrTooltip-close + .ui-tooltip-content {
+	margin-top: 14px;
+}
+
+/* Draggable */
+
+.ui-draggable {
+	cursor: move;
+}
+
+/* Autocomplete */
+
+.ui-autocomplete-loading + .wr-indicator {
+	display: inline-block;
+	width: 16px; height: 16px;
+	margin: 0 .3ex;
+	background: url('indicator.gif') no-repeat center;
+	vertical-align: middle;
+}
+
+.ui-autocomplete {
+	max-height: 11em;
+	overflow-x: hidden; overflow-y: auto;
+}
+
+/* Special */
+
+.wr-ajaxDiv, .wr-ajaxContent, .wr-tooltipArea, .wr-tooltipTarget {
+	display: inline;
+}

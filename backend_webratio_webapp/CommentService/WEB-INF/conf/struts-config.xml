@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN" "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+
+<struts-config>
+  <form-beans type="org.apache.struts.action.ActionFormBean">
+    <form-bean name="baseFormBean" type="com.webratio.struts.WRPageFormBean">
+      <form-property name="CSRFToken" type="java.lang.String"/>
+      <form-property name="lastURL" type="java.lang.String"/>
+    </form-bean>
+    <form-bean name="page1FormBean" extends="baseFormBean">
+      <form-property name="fld4" type="java.lang.String"/>
+      <form-property name="fld5" type="java.lang.String"/>
+      <form-property name="ln9" type="java.lang.String"/>
+      <form-property name="enu3" type="java.lang.String"/>
+      <form-property name="enu3Key" type="java.lang.String"/>
+    </form-bean>
+    <form-bean name="page2FormBean" extends="baseFormBean">
+      <form-property name="fld3" type="java.lang.String"/>
+      <form-property name="sfld2" type="java.lang.String"/>
+      <form-property name="sfld2List" type="java.lang.String[]"/>
+      <form-property name="sfld2LabelList" type="java.lang.String[]"/>
+      <form-property name="sfld2LabelList_locale" type="java.lang.String[]"/>
+      <form-property name="ln2" type="java.lang.String"/>
+      <form-property name="enu1" type="java.lang.String"/>
+      <form-property name="enu1Key" type="java.lang.String"/>
+    </form-bean>
+    <form-bean name="page3FormBean" extends="baseFormBean">
+      <form-property name="fld2" type="java.lang.String"/>
+      <form-property name="fld1" type="java.lang.String"/>
+      <form-property name="ln1" type="java.lang.String"/>
+      <form-property name="enu2" type="java.lang.String"/>
+      <form-property name="enu2Key" type="java.lang.String"/>
+    </form-bean>
+  </form-beans>
+  <global-exceptions>
+    <exception type="com.webratio.rtx.RTXPermissionException" handler="com.webratio.struts.exceptions.RTXPermissionExceptionHandler" key="none"/>
+    <exception type="com.webratio.rtx.RTXExpirationException" handler="com.webratio.struts.exceptions.RTXExpirationExceptionHandler" key="none"/>
+    <exception type="java.lang.Throwable" handler="com.webratio.struts.exceptions.GenericExceptionHandler" key="none"/>
+  </global-exceptions>
+  <global-forwards type="org.apache.struts.action.ActionForward">
+    <forward name="start" path="/index.jsp"/>
+    <forward name="pageUnknown" path="/pageUnknown.jsp"/>
+    <forward name="soapFault" path="/soapFault.do"/>
+    <forward name="restFault" path="/restFault.do"/>
+  </global-forwards>
+  <action-mappings type="org.apache.struts.action.ActionMapping">
+    <!-- PAGE ACTIONS -->
+    <action path="/page_*" type="com.webratio.struts.actions.PageAction" name="{1}FormBean" scope="session" validate="false" parameter="{1}"/>
+    <action path="/form_*" type="com.webratio.struts.actions.PageFormAction" name="{1}FormBean" scope="session" validate="true" input="/restore_{1}.do" parameter="{1}"/>
+    <action path="/restore_*" type="com.webratio.struts.actions.RestoreContextAction" name="{1}FormBean" scope="session" input="/{1}.do" validate="false" parameter="{1}"/>
+    <action path="/wr_redirect" type="com.webratio.struts.actions.RedirectAction" scope="session" validate="false"/>
+    <!-- OPERATION ACTIONS -->
+    <action path="/operation_*" type="com.webratio.struts.actions.OperationAction" parameter="{1}"/>
+    <!-- OTHER ACTIONS -->
+    <action path="/luceneIndexer" type="com.webratio.struts.actions.LuceneIndexerAction" parameter="/luceneIndexer"/>
+    <action name="loginFormBean" path="/prepareLogin" type="com.webratio.struts.actions.PrepareLoginAction"/>
+    <action name="loginFormBean" path="/loginAction" type="com.webratio.struts.actions.LoginAction"/>
+  </action-mappings>
+  <!-- CONTROLLER -->
+  <controller bufferSize="4096" locale="false" multipartClass="com.webratio.struts.upload.WRCommonsMultipartRequestHandler"/>
+  <message-resources factory="com.webratio.struts.WRPropertyMessageResourcesFactory" parameter="ApplicationResources|en|US" null="false"/>
+  <!-- PLUGINS -->
+  <plug-in className="com.webratio.struts.RTXInitPlugIn"/>
+</struts-config>

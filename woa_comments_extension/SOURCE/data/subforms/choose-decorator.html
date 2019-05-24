@@ -1,0 +1,25 @@
+<form> 
+    <div class="navbar-brand pim-sidebar-header text-center" style="width:100%;">
+        <span data-l10n-id="choose_decorator_title"></span>
+    </div> 
+    <p class="instructions" data-l10n-id="choose_decorator_instructions"></p> 
+    <!-- LIST OF CONCEPTS -->
+    <div id="list-of-decorators" class="list-group"></div>
+    <!-- NAVIGATION -->
+    <nav>
+        <ul class="pager">
+            <!--<li class="previous active">
+                <button type="button" class="btn btn-warning navbar-btn" onclick="window.sidebar.manageCTemplates();">
+                    <span class="glyphicon glyphicon-trash"></span>
+                    <span class="pager-option-label" data-l10n-id="close"></span>
+                </button>
+            </li> -->
+            <li class="next active">
+                <button type="button" class="btn btn-warning navbar-btn" onclick="sidebar.saveDecoratorData('openDecoratorMessagesForm');">
+                    <span data-l10n-id="next_step"></span>
+                    <span class="glyphicon glyphicon-arrow-right"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</form>

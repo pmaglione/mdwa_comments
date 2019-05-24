@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.EntityBasedEntryUnitService" name="Product">
+  <Entity>ent2</Entity>
+  <Query entity="ent2">
+    <Input id="p0" param="enu2.att3" type="integer" implied="false" expandStyle="in"/>
+    <HQL>from Product a_product
+      <Where defaultPolicy="" allImplied="false">(({[p0]a_product.oid in(?)}))</Where>
+    </HQL>
+  </Query>
+  <FormFields>
+    <Field id="fld2" name="category" type="string" localized="false"></Field>
+    <Field id="fld1" name="name" type="string" localized="false"></Field>
+  </FormFields>
+  <wr:Validation xmlns:wr="http://www.webratio.com/2013/WebML/WRValidation">
+    <wr:ValidationLink elementId="enu2" linkId="ln1" action="validate"/>
+  </wr:Validation>
+</Descriptor>

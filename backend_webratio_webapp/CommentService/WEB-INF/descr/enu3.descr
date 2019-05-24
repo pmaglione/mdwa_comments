@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.EntityBasedEntryUnitService" name="New Comment">
+  <Entity>ent1</Entity>
+  <Query entity="ent1">
+    <Input id="p0" param="enu3.att1" type="integer" implied="false" expandStyle="in"/>
+    <HQL>from Comment a_comment
+      <Where defaultPolicy="" allImplied="false">(({[p0]a_comment.oid in(?)}))</Where>
+    </HQL>
+  </Query>
+  <FormFields>
+    <Field id="fld4" name="Comment" type="text" localized="false" attributeId="att2"></Field>
+    <Field id="fld5" name="Product" type="string" localized="false" serverOnly="true"></Field>
+  </FormFields>
+  <wr:Validation xmlns:wr="http://www.webratio.com/2013/WebML/WRValidation">
+    <wr:ValidationLink elementId="enu3" linkId="ln9" action="validate"/>
+  </wr:Validation>
+</Descriptor>

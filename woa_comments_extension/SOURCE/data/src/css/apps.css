@@ -1,0 +1,103 @@
+@font-face{
+    font-family:FontAwesome;
+    src:url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.eot?#iefix) format('eot'),
+    url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.woff) format('woff'),
+    url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.ttf) format('truetype'),
+    url(https://netdna.bootstrapcdn.com/font-awesome/2.0/font//fontawesome-webfont.svg#FontAwesome) format('svg');
+    font-style:normal;
+}
+.woa-top-left-floating-menu{
+    position: relative;
+    left: -17px;
+}
+.alert-success {
+    color: #3C763D;
+    background-color: #DFF0D8;
+    border-color: #D6E9C6;
+}
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+.alert-success .alert-link {
+    color: #2B542C;
+}
+.alert .alert-link {
+    font-weight: 900;
+}
+.woa-alert-icon:before {
+    font-family: 'FontAwesome';
+    content:"\f05a"; 
+} 
+.custom-fa-twitter{
+    font-size: 2em;
+}
+.custom-notification-header{
+    display: table-cell;
+    vertical-align: middle;
+}
+.custom-notification-header:nth-child(1){
+    padding-right: 15px;
+}
+
+.property-item-cog {
+    position: absolute !important;
+    top: 7px !important;
+    right: 0px !important;
+    color: #505050;
+    z-index: 9999998;
+    font-size: 25px;
+    border:1px solid gray;
+}
+.woa-augmenter-icon {
+    color: black;
+    /*background-color: orange;*/
+    padding: 5px;
+    border-radius: 10px;
+}
+.woa-augmenter-icon:before {
+    font-family: 'FontAwesome';
+    content:"\f022"; 
+} 
+
+.popup{
+    z-index: 2147483647;
+    position:absolute;
+    display:block;
+    left:0px;
+    top:25px;
+    height:20px;
+    width:20px;
+    padding:0;
+    margin:0;
+    border:1px solid gray;
+    background-color:white;
+    font-weight:normal;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.popup .list-item {
+    font-size: 15px !important;
+    width: 100%;
+    border-bottom: 1px solid #D6D6D6;
+    padding: 5px;
+}
+.popup .list-item input{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.popup .list-item:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+.list {
+    width: 100%;
+}
+.popup .list-item:last-child { 
+    border-bottom: none;
+}
+.popup .list-item span{ 
+    padding-left: 12px;
+}

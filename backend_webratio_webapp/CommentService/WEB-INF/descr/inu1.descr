@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.content.rtx.db.IndexUnitService" name="Comments">
+  <UseFirstRowAsDefaultCurrent>false</UseFirstRowAsDefaultCurrent>
+  <MaxResults/>
+  <Query entity="ent1">
+    <Input id="p0" param="rcond1.att3" type="integer" implied="false" expandStyle="in"/>
+    <Output id="att1" name="oid" index="0"/>
+    <Output id="att2" name="content" index="1"/>
+    <HQL>select a_comment.oid, a_comment.content from Comment a_comment
+      <Where defaultPolicy="fill" allImplied="false">(({[p0](a_comment.commentToProduct.oid in(?))}))</Where>
+    </HQL>
+  </Query>
+</Descriptor>

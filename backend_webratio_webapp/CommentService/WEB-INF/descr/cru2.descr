@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.operation.rtx.db.CreateUnitService" name="Create Comment">
+  <Entity>ent1</Entity>
+  <BulkInsert>false</BulkInsert>
+  <SkipBlankRecords>false</SkipBlankRecords>
+  <Field param="cru2.att1" type="integer" attribute="att1">oid</Field>
+  <Field param="cru2.att2" type="string" attribute="att2">content</Field>
+  <Association name="commentToProduct" direct="true" inverseName="productToComment" oneToOne="false" maxCardMany="false">
+    <QueryInput id="oid" param="cru2.role4.att3" type="integer"/>
+    <Query>from Product _e where _e.oid = :oid</Query>
+  </Association>
+  <!--Operation Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultOperationParameterService">
+    <ModelName>Create Comment</ModelName>
+    <ParentContainer>sv1</ParentContainer>
+    <NavigationAncestors>sv1</NavigationAncestors>
+    <Secure>false</Secure>
+    <Localized>false</Localized>
+    <CheckPermission>false</CheckPermission>
+    <StartsTransaction>false</StartsTransaction>
+    <LinkIdRequired>true</LinkIdRequired>
+    <OperationParams>
+      <OperationParam unit="cru2">par23</OperationParam>
+      <OperationParam unit="cru2">cru2.att1</OperationParam>
+      <OperationParam unit="cru2">cru2.att2</OperationParam>
+      <OperationParam unit="cru2">cru2.role4.att3</OperationParam>
+      <OperationParam unit="cru2">par28</OperationParam>
+      <OperationParam unit="cru2">par25</OperationParam>
+      <OperationParam unit="cru2">cru2.entityBeans</OperationParam>
+      <Params>rcond1.att3|sfld2_output|par18|sp|acond1|par29|cmplink|link|sfld2_label|par27|par24|smc</Params>
+    </OperationParams>
+    <OutgoingLinks>
+      <Link resultCode="success">oln7</Link>
+    </OutgoingLinks>
+  </WRParameterService>
+</Descriptor>

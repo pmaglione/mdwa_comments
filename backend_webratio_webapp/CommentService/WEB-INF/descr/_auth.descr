@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.db.AuthenticationService" name="Authentication Service">
+  <Database>db1</Database>
+  <CryptAlgorithm/>
+  <LoginQuery>SELECT u.oid, u.password, g.oid, m.moduleID FROM User u LEFT JOIN u.defaultGroup g LEFT JOIN g.defaultModule m WHERE u.userName = :userName</LoginQuery>
+</Descriptor>

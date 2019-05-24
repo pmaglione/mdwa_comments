@@ -1,0 +1,68 @@
+<form id="edit-property-form">
+    <table class="navbar-brand pim-sidebar-header text-center" style="width:100%;">
+        <span id="property-header-icon" class="glyphicon"></span> &nbsp;
+        <span id="property-header-title"></span>
+    </table>   
+    <!-- :::::::::: OWNER CONCEPT :::::::::: -->
+    <div class="form-group">
+        <label for="edit-property-owner" data-l10n-id="owner_concept"></label>
+        <select id="edit-property-owner" class="form-control"></select>
+    </div>
+    <!-- :::::::::: NAME :::::::::: -->
+    <div class="form-group">
+        <label for="edit-property-name" data-l10n-id="materializable_name"></label>
+        <input id="edit-property-name" name="edit-property-name" type="text" class="form-control" placeholder="E.g. Title" required="true"></input>
+    </div>
+    <!-- :::::::::: TAG :::::::::: -->
+    <div class="form-group">
+        <label for="edit-property-tag" data-l10n-id="materializable_tag"></label>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
+            <input type="text" class="form-control" id="edit-property-tag" required="true"></input>
+        </div>
+    </div>   
+    <!-- :::::::::: DATA TYPE :::::::::: -->     
+    <div class="form-group">
+        <label for="edit-property-tag" data-l10n-id="property_data_type"></label>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-asterisk"></span></span>
+            <input type="text" class="form-control" id="edit-property-tag" required="true"></input>
+        </div>
+    </div>   
+    <!-- :::::::::: SAVE STATIC :::::::::: 
+    <div class="checkbox">
+        <label><input type="checkbox"> <b style="vertical-align: text-bottom;"><span data-l10n-id="save_as_static_data"></span></b></label>
+    </div>    --> 
+    <!-- :::::::::: XPATH :::::::::: --> 
+    <div class="form-group">
+        <label for="edit-property-xpath" data-l10n-id="materializable_selector"></label>
+        <select id="edit-property-xpath" class="form-control"></select>
+    </div>
+    <!-- :::::::::: PREVIEW :::::::::: --> 
+    <div class="form-group">
+        <label for="preview-of-property" data-l10n-id="materializable_preview"></label>
+        <div id="preview-of-property">
+            <img id="property-preview-image" class="image-preview" /> 
+        </div>
+    </div>
+    <div class="">
+        <a href="" class="pull-right" style="font-size: 12px;color: blue;">   Advanced settings</a>
+    </div>
+    
+    <nav> <!-- :::::::::: PAGINATION :::::::::: -->
+        <ul class="pager">
+            <li class="previous active">
+                <button id="exit-property" type="button" class="btn btn-warning navbar-btn" onclick="window.sidebar.manageCTemplates();">
+                    <span class="glyphicon glyphicon-trash"></span>
+                    <span id="discard-property-label" class="pager-option-label" data-l10n-id="discard"></span>
+                </button>
+            </li>
+            <li class="next active">
+                <button id="save-property" type="button" class="btn btn-warning navbar-btn" >
+                    <span data-l10n-id="save"></span>
+                    <span class="glyphicon glyphicon-floppy-disk"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</form>

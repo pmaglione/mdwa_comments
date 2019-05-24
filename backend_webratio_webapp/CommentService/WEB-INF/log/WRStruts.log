@@ -1,0 +1,33 @@
+22 may 2019 19:26:27,411  INFO [http-bio-8080-exec-1]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 351 ms
+22 may 2019 19:26:37,858  INFO [http-bio-8080-exec-8]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 17 ms
+22 may 2019 19:26:41,384  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Form page action execution [id=page1] done in 11 ms
+22 may 2019 19:26:41,462  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][/operation_cru2]Operation action execution [first operation id=cru2] done in 75 ms
+22 may 2019 19:26:41,468  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action pre-redirect execution [id=page1] done in 4 ms
+22 may 2019 19:26:41,485  INFO [http-bio-8080-exec-10]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 10 ms
+22 may 2019 19:27:12,649  INFO [http-bio-8080-exec-2]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 8 ms
+22 may 2019 19:27:27,458  INFO [http-bio-8080-exec-2]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 9 ms
+22 may 2019 19:28:36,571  INFO [http-bio-8080-exec-10]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 15 ms
+22 may 2019 19:28:53,076  INFO [http-bio-8080-exec-1]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 10 ms
+22 may 2019 19:29:20,342  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Form page action execution [id=page1] done in 1 ms
+22 may 2019 19:29:20,352  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][/operation_cru2]Operation action execution [first operation id=cru2] done in 9 ms
+22 may 2019 19:29:20,355  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action pre-redirect execution [id=page1] done in 2 ms
+22 may 2019 19:29:20,367  INFO [http-bio-8080-exec-9]  (com.webratio.struts.actions.AbstractWRAction:53) - [076E41EFF67FBF99741E6E24C1A95083][page1]Page action execution [id=page1] done in 7 ms
+22 may 2019 19:32:48,245  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+22 may 2019 20:46:40,007  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+22 may 2019 20:55:26,950  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+22 may 2019 20:57:53,309  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+22 may 2019 20:58:57,241  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+22 may 2019 21:04:47,358  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+22 may 2019 21:08:33,115  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+22 may 2019 21:42:05,540  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+23 may 2019 20:23:40,045  INFO [http-bio-8080-exec-1]  (com.webratio.struts.actions.AbstractWRAction:53) - [794D7A5C79F4C6132B6C733486650BE9][page3]Page action execution [id=page3] done in 153 ms
+23 may 2019 20:23:46,583  INFO [http-bio-8080-exec-2]  (com.webratio.struts.actions.AbstractWRAction:53) - [794D7A5C79F4C6132B6C733486650BE9][page1]Page action execution [id=page1] done in 293 ms
+23 may 2019 20:24:27,780  INFO [http-bio-8080-exec-4]  (com.webratio.struts.actions.AbstractWRAction:53) - [794D7A5C79F4C6132B6C733486650BE9][page1]Page action execution [id=page1] done in 17 ms
+23 may 2019 20:24:59,466  INFO [http-bio-8080-exec-6]  (com.webratio.struts.actions.AbstractWRAction:53) - [794D7A5C79F4C6132B6C733486650BE9][page1]Form page action execution [id=page1] done in 9 ms
+23 may 2019 20:24:59,545  INFO [http-bio-8080-exec-6]  (com.webratio.struts.actions.AbstractWRAction:53) - [794D7A5C79F4C6132B6C733486650BE9][/operation_cru2]Operation action execution [first operation id=cru2] done in 76 ms
+23 may 2019 20:24:59,550  INFO [http-bio-8080-exec-6]  (com.webratio.struts.actions.AbstractWRAction:53) - [794D7A5C79F4C6132B6C733486650BE9][page1]Page action pre-redirect execution [id=page1] done in 4 ms
+23 may 2019 20:24:59,570  INFO [http-bio-8080-exec-7]  (com.webratio.struts.actions.AbstractWRAction:53) - [794D7A5C79F4C6132B6C733486650BE9][page1]Page action execution [id=page1] done in 13 ms
+23 may 2019 20:35:17,507  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'
+24 may 2019 14:25:19,900  INFO [http-bio-8080-exec-1]  (com.webratio.struts.actions.AbstractWRAction:53) - [008CA63D304BEAD759055F5A66A0B112][page1]Page action execution [id=page1] done in 405 ms
+24 may 2019 14:25:31,996  INFO [http-bio-8080-exec-3]  (com.webratio.struts.actions.AbstractWRAction:53) - [008CA63D304BEAD759055F5A66A0B112][page1]Page action execution [id=page1] done in 39 ms
+24 may 2019 14:44:11,726  WARN [localhost-startStop-2]  (com.webratio.struts.RTXInitPlugIn:61) - Stopping application module 'CommentService'

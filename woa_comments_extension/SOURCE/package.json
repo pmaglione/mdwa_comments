@@ -1,0 +1,18 @@
+{
+	"id": "woa-with-app-maker@lifia.info.unlp.edu.ar",
+	"title": "WOA",
+	"name": "woa-with-app-maker",
+	"version": "1.0",
+	"description": "Collect elements from the Web amd attack them some behaviour!",
+	"author": "LIFIA",
+	"homepage": "http://www.lifia.info.unlp.edu.ar/lifia/es",
+	"engines": 	{
+		"firefox": ">=38.0a1",
+		"fennec": ">=38.0a1"
+	},
+	"license": "MPL 2.0",
+	"main": "lib/main.js",
+	"keywords": [
+        "jetpack"
+    ]
+}

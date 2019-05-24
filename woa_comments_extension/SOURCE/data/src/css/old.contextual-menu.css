@@ -1,0 +1,25 @@
+body {
+    overflow:hidden;
+}
+.list-item {
+	width: 100%;
+	border-bottom: 1px solid #D6D6D6;
+	padding: 5px;
+}
+.list-item input{
+	position: relative;
+	display: inline-block;
+	float: right;
+}
+.list-item:hover {
+	background-color: rgba(200, 200, 200, 0.3);
+}
+.list {
+	width: 100%;
+}
+.list-item:last-child { 
+	border-bottom: none;
+}
+.list-item span{ 
+	padding-left: 12px;
+}

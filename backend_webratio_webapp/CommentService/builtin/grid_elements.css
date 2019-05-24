@@ -1,0 +1,49 @@
+.grid_1 > *, .grid_2 > *, .grid_3 > *,
+.grid_4 > *, .grid_5 > *, .grid_6 > *,
+.grid_7 > *, .grid_8 > *, .grid_9 > *,
+.grid_10 > *, .grid_11 > *, .grid_12 > *,
+.grid_13 > *, .grid_14 > *, .grid_15 > *,
+.grid_16 > *, .grid_17 > *, .grid_18 > *,
+.grid_19 > *, .grid_20 > *, .grid_21 > *,
+.grid_22 > *, .grid_23 > *, .grid_24 > * {
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+}
+
+.grid_1 > .wr-ajaxDiv > *, .grid_2 > .wr-ajaxDiv > *, .grid_3 > .wr-ajaxDiv > *,
+.grid_4 > .wr-ajaxDiv > *, .grid_5 > .wr-ajaxDiv > *, .grid_6 > .wr-ajaxDiv > *,
+.grid_7 > .wr-ajaxDiv > *, .grid_8 > .wr-ajaxDiv > *, .grid_9 > .wr-ajaxDiv > *,
+.grid_10 > .wr-ajaxDiv > *, .grid_11 > .wr-ajaxDiv > *, .grid_12 > .wr-ajaxDiv > *,
+.grid_13 > .wr-ajaxDiv > *, .grid_14 > .wr-ajaxDiv > *, .grid_15 > .wr-ajaxDiv > *,
+.grid_16 > .wr-ajaxDiv > *, .grid_17 > .wr-ajaxDiv > *, .grid_18 > .wr-ajaxDiv > *,
+.grid_19 > .wr-ajaxDiv > *, .grid_20 > .wr-ajaxDiv > *, .grid_21 > .wr-ajaxDiv > *,
+.grid_22 > .wr-ajaxDiv > *, .grid_23 > .wr-ajaxDiv > *, .grid_24 > .wr-ajaxDiv > * {
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+}
+
+.grid_1 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_2 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_3 > .wr-ajaxDiv > .wr-ajaxContent > *,
+.grid_4 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_5 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_6 > .wr-ajaxDiv > .wr-ajaxContent > *,
+.grid_7 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_8 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_9 > .wr-ajaxDiv > .wr-ajaxContent > *,
+.grid_10 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_11 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_12 > .wr-ajaxDiv > .wr-ajaxContent > *,
+.grid_13 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_14 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_15 > .wr-ajaxDiv > .wr-ajaxContent > *,
+.grid_16 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_17 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_18 > .wr-ajaxDiv > .wr-ajaxContent > *,
+.grid_19 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_20 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_21 > .wr-ajaxDiv > .wr-ajaxContent > *,
+.grid_22 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_23 > .wr-ajaxDiv > .wr-ajaxContent > *, .grid_24 > .wr-ajaxDiv > .wr-ajaxContent > * {
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+}
+
+.grid_1 > .cke_skin_kama, .grid_2 > .cke_skin_kama, .grid_3 > .cke_skin_kama,
+.grid_4 > .cke_skin_kama, .grid_5 > .cke_skin_kama, .grid_6 > .cke_skin_kama,
+.grid_7 > .cke_skin_kama, .grid_8 > .cke_skin_kama, .grid_9 > .cke_skin_kama,
+.grid_10 > .cke_skin_kama, .grid_11 > .cke_skin_kama, .grid_12 > .cke_skin_kama,
+.grid_13 > .cke_skin_kama, .grid_14 > .cke_skin_kama, .grid_15 > .cke_skin_kama,
+.grid_16 > .cke_skin_kama, .grid_17 > .cke_skin_kama, .grid_18 > .cke_skin_kama,
+.grid_19 > .cke_skin_kama, .grid_20 > .cke_skin_kama, .grid_21 > .cke_skin_kama,
+.grid_22 > .cke_skin_kama, .grid_23 > .cke_skin_kama, .grid_24 > .cke_skin_kama {
+	width: 100% !important;
+}

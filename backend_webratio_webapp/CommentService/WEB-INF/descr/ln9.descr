@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultLinkService">
+  <Target>cru2</Target>
+  <Secure>false</Secure>
+  <Source>enu3</Source>
+  <SourcePage>page1</SourcePage>
+  <ReachableAlternativePages></ReachableAlternativePages>
+  <Navigates>true</Navigates>
+  <StartsTransaction>false</StartsTransaction>
+  <EndsTransaction>false</EndsTransaction>
+  <StartPageIdRequiredByTarget>true</StartPageIdRequiredByTarget>
+  <PreservedContextParams>
+    <Params>par24|par27|par18|acond1|par29</Params>
+  </PreservedContextParams>
+  <ContextPropagations>
+    <ContextPropagation targetParam="cru2.entityBeans" sourceUnit="enu3" sourceParam="entityBean"/>
+    <ContextPropagation targetParam="cru2.att2" sourceUnit="enu3" sourceParam="fld4"/>
+    <ContextPropagation targetParam="cru2.role4.att3" sourceUnit="enu3" sourceLinkParam="par18"/>
+    <ContextPropagation targetParam="cru2.att1" sourceUnit="enu3" sourceParam="key.att1"/>
+    <ContextPropagation targetParam="par23" sourceUnit="enu3" sourceLinkParam="par18"/>
+    <ContextPropagation targetParam="par25" sourceUnit="enu3" sourceLinkParam="par24"/>
+    <ContextPropagation targetParam="par28" sourceUnit="enu3" sourceLinkParam="par27"/>
+  </ContextPropagations>
+</Descriptor>

@@ -1,0 +1,46 @@
+<div> 
+    <!-- ( TEMPLATE / INSTANCE ) TABS -->
+    <div class="woa-btn-gruoup btn-group btn-group-justified" role="group">
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default btn-warning"    data-l10n-id="ctemplates_view" onclick="sidebar.manageCTemplates();"></button>
+        </div>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-default btn-warning active" data-l10n-id="cinstances_view">Instances</button>
+        </div>
+    </div>
+    <!-- SEARCH BOX -->
+    <div id="se-search-components" class="input-group col-md-12">
+        <input id="se-search-input" type="text" class="  search-query form-control" placeholder="Search" />
+        <span class="input-group-btn">
+            <button id="se-search-trigger" class="btn btn-default" type="button">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+        </span>
+    </div>
+    <!-- INSTANCE OBJECTS -->
+    <div class="created-templates-list row">
+        <div id="created-cinstances-list" class="list-group">
+            <!--EXAMPLE:
+                <a href="#" class="list-group-item">
+                    <div class="instance-item-cog"><button class="btn-warning glyphicon glyphicon-option-horizontal"></button></div>
+                    <h4 class="list-group-item-heading">Amazon Book</h4>
+                    <p class="list-group-item-text">
+                        Title: The big bang
+                        Author: Lalala
+                        <br/>
+                        Price: $20
+                    </p>
+                </a>
+            -->
+        </div>
+    </div>
+    <!-- NAVIGATION BAR -->
+    <div id="se-nav-components" class="btn-group btn-group-justified" role="group">
+        <div class="btn-group" role="group">
+            <button id="se-nav-prev" type="button" class="btn btn-warning"><span class="glyphicon glyphicon-arrow-left"></span></button>
+        </div>
+        <div class="btn-group" role="group">
+            <button id="se-nav-next" type="button" class="btn btn-warning"><span class="glyphicon glyphicon-arrow-right"></span></button>
+        </div>
+    </div>
+</div>

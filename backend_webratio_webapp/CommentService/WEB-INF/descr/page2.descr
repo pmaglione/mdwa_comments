@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultPageService" name="Create Comment">
+  <ParentContainer>sv1</ParentContainer>
+  <Secure>false</Secure>
+  <Localized>false</Localized>
+  <CheckPermission>false</CheckPermission>
+  <Alternatives/>
+  <ProtectedSubPages/>
+  <Navigations knownEffects="#pr#">
+    <Navigation name="0" nonContextual="true" interPage="always" links="page2"/>
+    <Navigation name="1" nonContextual="true" interPage="always" links="page2.link"/>
+    <Navigation name="2" links="page2.auto-link"/>
+    <Navigation name="3" links="page2.auto-link" selectiveRefresh="true"/>
+    <Navigation name="4" interPage="always" links="ln1|oln1" effects="#pr#"/>
+    <Navigation name="5" links="ln2|impl" postPropagatedLink="ln2"/>
+  </Navigations>
+  <ContextInitServices/>
+  <ContextInits></ContextInits>
+  <UselessPreserves>
+    <UselessPreserve navs="3|2|5" futile=""/>
+  </UselessPreserves>
+  <LinkSequence>ln8</LinkSequence>
+  <UnitComputations>
+    <UnitComputation unit="enu1" formBased="true">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+      <RefreshFormAll navs="1|0|5|4"/>
+    </UnitComputation>
+    <UnitComputation unit="seu3">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </UnitComputation>
+  </UnitComputations>
+  <ManualLinks>
+    <ManualLink>ln2</ManualLink>
+    <ManualLink>ln4</ManualLink>
+  </ManualLinks>
+  <Variables></Variables>
+  <Conditions></Conditions>
+  <Layouts>
+    <Layout id="page2_grid_0">
+      <Layout id="page2_cell_0">
+        <Layout id="enu1_0" unitId="enu1"></Layout>
+      </Layout>
+    </Layout>
+  </Layouts>
+  <AutoLinkInfo>
+    <PreservedContextParams>
+      <Params/>
+    </PreservedContextParams>
+    <PreservedContextParams selectiveRefresh="true">
+      <Params/>
+    </PreservedContextParams>
+  </AutoLinkInfo>
+  <!--Page Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultPageParameterService">
+    <ModelName>Create Comment</ModelName>
+    <NavigationAncestors>sv1</NavigationAncestors>
+    <LinkIdRequired>true</LinkIdRequired>
+    <PageParams>
+      <PageParam preservedByForm="true" unit="enu1">sfld2_label</PageParam>
+      <PageParam preservedByForm="true" unit="enu1">sfld2_output</PageParam>
+      <PageParam>cru2.att1</PageParam>
+      <PageParam>cru2.role4.att3</PageParam>
+      <PageParam>cru2.att2</PageParam>
+      <PageParam>cru2.entityBeans</PageParam>
+      <PageParam>link</PageParam>
+      <PageParam>nav</PageParam>
+      <PageParam>so</PageParam>
+      <PageParam>ajax</PageParam>
+      <PageParam>ajaxRefresh</PageParam>
+    </PageParams>
+  </WRParameterService>
+</Descriptor>

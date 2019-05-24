@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="src/css/sidebar.css"></link>
+        <link href='http://fonts.googleapis.com/css?family=Crushed' rel='stylesheet' type='text/css'></link>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'></link>
+        <!-- JQUERY AND JQUERY UI -->
+        <link rel="stylesheet" href="lib/css/jquery-ui.min.css"></link>
+        <link rel="stylesheet" href="lib/css/jquery-ui.structure.min.css"></link>
+        <link rel="stylesheet" href="lib/css/jquery-ui.theme.min.css"></link>
+        <script type="text/javascript" src="lib/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="lib/js/jquery-ui-1.11.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="lib/css/united.min.css">
+        <!--<link rel="stylesheet" href="lib/css/bootstrap-theme.min.css"></link>-->
+        <script type="text/javascript" src="lib/bootstrap.min.js"></script>
+        <!-- TOGGLE -->
+        <link rel="stylesheet" href="lib/css/bootstrap-toggle.min.css"></link>
+        <script type="text/javascript" src="lib/js/bootstrap-toggle.min.js"></script>
+        <!-- VALIDATION -->
+        <script type="text/javascript" src="lib/js/jquery.validate.min.js"></script>
+        <!-- TAG IT -->
+        <link rel="stylesheet" href="lib/css/tag-it.css"></link>
+        <script type="text/javascript" src="lib/js/tag-it.js"></script>
+        <!-- XPATH MANAGEMENT (JUST FOR SIDEBAR SIDE) -->
+        <script type="text/javascript" src="src/js/xpathManagement.js"></script>
+        <!-- SIDEBAR -->
+        <script type="text/javascript" src="src/js/sidebar.js"></script>
+    </head>
+    <body>
+    
+    <div class="main-container">
+        <ul class="nav nav-tabs">
+            <li id="manage-concept-templates-nav" class="active"><a href="#" onclick="sidebar.manageCTemplates();" oncontextmenu="sidebar.manageCTemplates();">WOA viewer</a></li>
+            <li id="manage-apps-nav" class="inactive-tab"><a href="#" onclick="sidebar.manageApplications();" oncontextmenu="sidebar.manageCTemplates();">Applications</a></li>
+        </ul>
+        <div class="woa-content">
+            <!-- If you remove/add something rom here, remember to also do it in SidebarManager.prototype.loadSubforms -->
+
+            <!-- CONCEPTS SECTION -->
+            <div id="edit-concept-template" class="subform-body subform"></div>
+            <div id="manage-concept-templates" class="subform-body subform">
+                <!-- Templates navigation -->
+                <div class="woa-btn-gruoup btn-group btn-group-justified" role="group">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default btn-warning active" data-l10n-id="ctemplates_view">Templates</button>
+                    </div>
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-default btn-warning disabled" data-l10n-id="cinstances_view"></button>
+                    </div>
+                </div>
+                <div id="created-ctemplates-list" class="created-templates-list row"></div>
+            </div>
+            <div id="manage-concept-instances" class="subform-body subform">
+            </div>
+            <div id="edit-search-engine"  class="subform-body subform"></div>  
+
+            <!-- PROPERTIES SECTION -->
+            <div id="edit-property" class="subform-body subform"></div>
+            <div id="manage-properties" class="subform-body">
+                <div id="properties-management" class="subform"></div>
+            </div>
+            
+            <!-- SUBFORM: APPLICATIONS -->
+            <div id="manage-apps" class="subform-body subform">
+                <div id="apps-management" class="subform"></div>
+            </div>
+            <div id="manage-decorator" class="subform-body">
+                <div id="choose-decorator" class="subform"></div>  
+                <div id="choose-decorator-messages" class="subform"></div>   
+                <div id="config-decorator-required" class="subform"></div>          
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(".subform").css("display", "none");
+        </script>
+    </body>
+</html>

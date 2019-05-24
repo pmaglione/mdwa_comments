@@ -1,0 +1,63 @@
+<form>     
+    <div class="navbar-brand pim-sidebar-header text-center" style="width:100%;">
+        <span data-l10n-id="edit_search_engine_title"></span>
+    </div>  
+    <p class="instructions" data-l10n-id="edit_search_engine_instructions"></p>
+    <div>
+        <!-- :::::::::: OWNER CONCEPT :::::::::: -->
+        <div class="form-group">
+            <label for="edit-engine-owner" data-l10n-id="owner_concept"></label>
+            <select id="edit-engine-owner" class="form-control"></select>
+        </div>
+        <!-- :::::::::: SEARCH ENTRY BOX :::::::::: -->
+        <div class="form-group">
+            <label for="search-engine-entry" data-l10n-id="search_input"></label>
+            <div style="float:right">
+                <input id="search-engine-entry" data-toggle="toggle" type="checkbox" data-on="Set" data-off="Not set" data-size="small" data-onstyle="default"></input>
+            </div>
+        </div>  
+        <!-- :::::::::: SEARCH ENTRY TRIGGER :::::::::: -->
+        <div class="form-group">
+            <label for="search-trigger" data-l10n-id="search_trigger"></label>
+            <div style="float:right">
+                <input id="search-trigger" data-toggle="toggle" type="checkbox" data-on="Set" data-off="Not set" data-size="small" data-onstyle="default"></input>
+            </div>
+        </div>  
+        <!-- :::::::::: NAVIGATION: NEXT PAGE :::::::::: -->
+        <div class="form-group">
+            <label for="next-nav-page" data-l10n-id="next_page"></label>
+            <div style="float:right">
+                <input id="next-nav-page" data-toggle="toggle" type="checkbox" data-on="Set" data-off="Not set" data-size="small" data-onstyle="default"></input>
+            </div>
+        </div> 
+        <!-- :::::::::: NAVIGATION: PREV. PAGE :::::::::: -->
+        <div class="form-group">
+            <label for="prev-nav-page" data-l10n-id="prev_page"></label>
+            <div style="float:right">
+                <input id="prev-nav-page" data-toggle="toggle" type="checkbox" data-on="Set" data-off="Not set" data-size="small" data-onstyle="default"></input>
+            </div>
+        </div> 
+	</div>
+    <!-- VALIDATION -->
+    <div id="checkFormIntroError" class="alert alert-danger" role="alert" style="display:none">
+        <span class="glyphicon glyphicon-exclamation-sign"></span>
+        <span id="checkFormIntroErrorText"></span>
+    </div>
+	<!-- PAGINATION -->
+    <nav>
+        <ul class="pager"> <!-- CAN ADD disabled TO THE ELEMENTS-->
+            <li class="previous active">
+                <button type="button" class="btn btn-warning navbar-btn" onclick="window.sidebar.manageCTemplates();">
+                    <span class="glyphicon glyphicon-trash"></span>
+                    <span class="pager-option-label" data-l10n-id="discard_changes"></span>
+                </button>
+            </li>
+            <li class="next active">
+                <button type="button" class="btn btn-warning navbar-btn" onclick="window.sidebar.saveSearchEngineData();">
+                    <span data-l10n-id="save"></span>
+                    <span class="glyphicon glyphicon-floppy-disk"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</form>

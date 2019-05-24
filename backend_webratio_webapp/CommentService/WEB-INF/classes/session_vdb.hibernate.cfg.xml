@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="webratio.database.id">session_vdb</property>
+    <property name="webratio.database.duration">volatile</property>
+    <property name="webratio.database.scope">session</property>
+    <!-- Database connection settings -->
+    <property name="connection.driver_class">org.h2.Driver</property>
+    <property name="connection.url">jdbc:h2:mem:session_vdb</property>
+    <property name="connection.username"/>
+    <property name="connection.password"/>
+    <property name="webratio.connection.cryptedPassword"/>
+    <property name="connection.MVCC">true</property>
+    <!-- JDBC connection pool (use the built-in) -->
+    <property name="connection.pool_size">15</property>
+    <property name="connection.provider_class">com.webratio.rtx.hibernate.VolatileConnectionProvider</property>
+    <property name="webratio.format_number">?1</property>
+    <property name="webratio.format_date">?1</property>
+    <property name="webratio.format_time">?1</property>
+    <property name="webratio.format_timestamp">?1</property>
+    <property name="webratio.interval_to_seconds">interval_to_seconds(?1,?2)</property>
+    <property name="webratio.extract_time">?1</property>
+    <!-- SQL dialect -->
+    <property name="dialect">com.webratio.hibernate.dialect.H2Dialect</property>
+    <!-- Enable Hibernate's automatic session context management -->
+    <property name="current_session_context_class">thread</property>
+    <!-- Disable the second-level cache  -->
+    <property name="cache.provider_class">org.hibernate.cache.NoCacheProvider</property>
+    <!-- Echo all executed SQL to stdout -->
+    <property name="show_sql">false</property>
+    <property name="format_sql">true</property>
+  </session-factory>
+</hibernate-configuration>

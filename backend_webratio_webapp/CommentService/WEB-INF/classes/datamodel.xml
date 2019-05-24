@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DataModel packageName="com.webratio.webapp" volatileKeyPolicy="" useQualifiedEntities="">
+  <!-- DATABASES -->
+  <Database id="application_vdb" url="jdbc:h2:mem:application_vdb" schema="" duration="volatileApplication"/>
+  <Database id="db1" url="jdbc:mysql://127.0.0.1/local_comments" schema=""/>
+  <Database id="session_vdb" url="jdbc:h2:mem:session_vdb" schema="" duration="volatileSession"/>
+  <!-- ENTITIES -->
+  <Entity id="Group" name="Group" className="com.webratio.webapp.Group" duration="persistent" database="db1">
+    <Attribute id="groupName" key="false" name="groupName" fieldName="groupName" type="string" javaType="java.lang.String"/>
+    <Attribute id="groupOID" key="true" name="oid" fieldName="oid" type="integer" javaType="java.lang.Integer"/>
+    <OutgoingRoles>Group2User|DefaultGroup2User|Group2DefaultModule|Group2Module</OutgoingRoles>
+    <InverseRoles>Group2User|DefaultGroup2User</InverseRoles>
+  </Entity>
+  <Entity id="Module" name="Module" className="com.webratio.webapp.Module" duration="persistent" database="db1">
+    <Attribute id="moduleID" key="false" name="moduleID" fieldName="moduleID" type="string" javaType="java.lang.String"/>
+    <Attribute id="moduleName" key="false" name="moduleName" fieldName="moduleName" type="string" javaType="java.lang.String"/>
+    <Attribute id="moduleOID" key="true" name="oid" fieldName="oid" type="integer" javaType="java.lang.Integer"/>
+    <OutgoingRoles>DefaultModule2Group|Module2Group</OutgoingRoles>
+    <InverseRoles>DefaultModule2Group|Module2Group</InverseRoles>
+  </Entity>
+  <Entity id="User" name="User" className="com.webratio.webapp.User" duration="persistent" database="db1">
+    <Attribute id="email" key="false" name="email" fieldName="email" type="string" javaType="java.lang.String"/>
+    <Attribute id="password" key="false" name="password" fieldName="password" type="password" javaType="java.lang.String"/>
+    <Attribute id="userName" key="false" name="userName" fieldName="userName" type="string" javaType="java.lang.String"/>
+    <Attribute id="userOID" key="true" name="oid" fieldName="oid" type="integer" javaType="java.lang.Integer"/>
+    <OutgoingRoles>User2Group|User2DefaultGroup</OutgoingRoles>
+    <InverseRoles/>
+  </Entity>
+  <Entity id="ent1" name="Comment" className="com.webratio.webapp.Comment" duration="persistent" database="db1">
+    <Attribute id="att1" key="true" name="oid" fieldName="oid" type="integer" javaType="java.lang.Integer"/>
+    <Attribute id="att2" key="false" name="content" fieldName="content" type="string" javaType="java.lang.String"/>
+    <OutgoingRoles>role4</OutgoingRoles>
+    <InverseRoles/>
+  </Entity>
+  <Entity id="ent2" name="Product" className="com.webratio.webapp.Product" duration="persistent" database="db1">
+    <Attribute id="att3" key="true" name="oid" fieldName="oid" type="integer" javaType="java.lang.Integer"/>
+    <Attribute id="att4" key="false" name="name" fieldName="name" type="string" javaType="java.lang.String"/>
+    <Attribute id="att7" key="false" name="category" fieldName="category" type="string" javaType="java.lang.String"/>
+    <OutgoingRoles>role3</OutgoingRoles>
+    <InverseRoles>role3</InverseRoles>
+  </Entity>
+  <!-- RELATIONSHIP_ROLES -->
+  <Role id="DefaultGroup2User" inverseId="User2DefaultGroup" source="Group" target="User" maxCard="many" fieldName="defaultUsers" derived="false" database="db1" direct="false"/>
+  <Role id="DefaultModule2Group" inverseId="Group2DefaultModule" source="Module" target="Group" maxCard="many" fieldName="defaultGroups" derived="false" database="db1" direct="false"/>
+  <Role id="Group2DefaultModule" inverseId="DefaultModule2Group" source="Group" target="Module" maxCard="1" fieldName="defaultModule" derived="false" database="db1" direct="true"/>
+  <Role id="Group2Module" inverseId="Module2Group" source="Group" target="Module" maxCard="many" fieldName="modules" derived="false" database="db1" direct="true"/>
+  <Role id="Group2User" inverseId="User2Group" source="Group" target="User" maxCard="many" fieldName="users" derived="false" database="db1" direct="false"/>
+  <Role id="Module2Group" inverseId="Group2Module" source="Module" target="Group" maxCard="many" fieldName="groups" derived="false" database="db1" direct="false"/>
+  <Role id="User2DefaultGroup" inverseId="DefaultGroup2User" source="User" target="Group" maxCard="1" fieldName="defaultGroup" derived="false" database="db1" direct="true"/>
+  <Role id="User2Group" inverseId="Group2User" source="User" target="Group" maxCard="many" fieldName="groups" derived="false" database="db1" direct="true"/>
+  <Role id="role3" inverseId="role4" source="ent2" target="ent1" maxCard="many" fieldName="productToComment" derived="false" database="db1" direct="false"/>
+  <Role id="role4" inverseId="role3" source="ent1" target="ent2" maxCard="1" fieldName="commentToProduct" derived="false" database="db1" direct="true"/>
+</DataModel>

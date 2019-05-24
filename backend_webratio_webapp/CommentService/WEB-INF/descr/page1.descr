@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.DefaultPageService" name="Comments List">
+  <ParentContainer>sv1</ParentContainer>
+  <Secure>false</Secure>
+  <Localized>false</Localized>
+  <CheckPermission>false</CheckPermission>
+  <Alternatives/>
+  <ProtectedSubPages/>
+  <Navigations knownEffects="#pr#">
+    <Navigation name="0" nonContextual="true" interPage="always" links="page1"/>
+    <Navigation name="1" nonContextual="true" interPage="always" links="page1.link"/>
+    <Navigation name="2" links="page1.auto-link"/>
+    <Navigation name="3" links="page1.auto-link" selectiveRefresh="true"/>
+    <Navigation name="4" interPage="always" links="ln2|oln7"/>
+    <Navigation name="5" links="ln9|impl" postPropagatedLink="ln9"/>
+    <Navigation name="6" links="ln9|oln7"/>
+  </Navigations>
+  <ContextInitServices/>
+  <ContextInits></ContextInits>
+  <UselessPreserves>
+    <UselessPreserve navs="3|2|6|5" effects="#pr#" futile=""/>
+    <UselessPreserve navs="2|6|5" effects="-" futile=""/>
+    <UselessPreserve navs="3" effects="-" futile="acond1|par29"/>
+  </UselessPreserves>
+  <LinkSequence>ln6|ln7</LinkSequence>
+  <UnitComputations>
+    <UnitComputation unit="inu1">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </UnitComputation>
+    <UnitComputation unit="seu2">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+    </UnitComputation>
+    <UnitComputation unit="enu3" formBased="true">
+      <NavigationCondition selectiveRefresh="true" effects="#pr#"/>
+      <RefreshFormAll navs="1|0|6|5|4"/>
+    </UnitComputation>
+  </UnitComputations>
+  <ManualLinks>
+    <ManualLink>ln9</ManualLink>
+  </ManualLinks>
+  <Variables>
+    <Variable id="var2" name="jsonGet" type="string" unitId="seu2" parameter="att4Array"></Variable>
+  </Variables>
+  <Conditions></Conditions>
+  <Layouts>
+    <Layout id="page1_grid_0">
+      <Layout id="page1_cell_0">
+        <Layout id="inu1_0" unitId="inu1"></Layout>
+      </Layout>
+      <Layout id="page1_cell_12">
+        <Layout id="enu3_0" unitId="enu3"></Layout>
+      </Layout>
+      <Layout id="page1_cell_24"></Layout>
+    </Layout>
+  </Layouts>
+  <AutoLinkInfo>
+    <PreservedContextParams>
+      <Params>acond1|par29</Params>
+    </PreservedContextParams>
+    <PreservedContextParams selectiveRefresh="true">
+      <Params>acond1|par29</Params>
+    </PreservedContextParams>
+  </AutoLinkInfo>
+  <!--Page Parameter Service-->
+  <WRParameterService service="com.webratio.rtx.core.DefaultPageParameterService">
+    <ModelName>Comments List</ModelName>
+    <URLFragment>acond1</URLFragment>
+    <NavigationAncestors>sv1</NavigationAncestors>
+    <LinkIdRequired>true</LinkIdRequired>
+    <PageParams>
+      <PageParam unit="seu2">acond1</PageParam>
+      <PageParam unit="seu2">par29</PageParam>
+      <PageParam unit="inu1">rcond1.att3</PageParam>
+      <PageParam>par24</PageParam>
+      <PageParam>par27</PageParam>
+      <PageParam>par18</PageParam>
+      <PageParam>par23</PageParam>
+      <PageParam>cru2.att1</PageParam>
+      <PageParam>cru2.role4.att3</PageParam>
+      <PageParam>cru2.att2</PageParam>
+      <PageParam>par28</PageParam>
+      <PageParam>par25</PageParam>
+      <PageParam>cru2.entityBeans</PageParam>
+      <PageParam>acond1</PageParam>
+      <PageParam>link</PageParam>
+      <PageParam>nav</PageParam>
+      <PageParam>so</PageParam>
+      <PageParam>ajax</PageParam>
+      <PageParam>ajaxRefresh</PageParam>
+    </PageParams>
+  </WRParameterService>
+</Descriptor>

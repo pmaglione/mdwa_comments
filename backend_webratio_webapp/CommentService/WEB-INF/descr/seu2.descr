@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.units.utility.rtx.db.SelectorUnitService" name="SelectProduct">
+  <MaxResults/>
+  <Query entity="ent2">
+    <Input id="p0" param="acond1" type="string" implied="true" impliedText="1 = 1" expandStyle="or" prefixValue="%" suffixValue="%" attribute="att4"/>
+    <Output id="att3" name="oid" index="0"/>
+    <Output id="att7" name="category" index="1"/>
+    <Output id="att4" name="name" index="2"/>
+    <HQL>select a_product.oid, a_product.category, a_product.name from Product a_product
+      <Where defaultPolicy="fill" allImplied="true">(({[p0]a_product.name like ?}))</Where>
+    </HQL>
+  </Query>
+</Descriptor>

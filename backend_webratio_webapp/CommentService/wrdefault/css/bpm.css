@@ -1,0 +1,69 @@
+.nowrap {
+    white-space: nowrap;
+}
+.text-center {
+    text-align: center!important;
+}
+.ProcessUnit .process-status {
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+.ProcessUnit .status-updated-icon {
+    background: transparent url(../images/database_updated.png) no-repeat;
+}
+.ProcessUnit .status-invalid {
+    background-color: #FFA3A7;
+}
+.ProcessUnit .status-invalid-icon {
+    background: transparent url(../images/database_error.png) no-repeat;
+}
+.ProcessUnit .status-outdated,
+.ProcessUnit .status-new {
+    background-color: #FFEA87;
+}
+.ProcessUnit .status-outdated-icon,
+.ProcessUnit .status-new-icon {
+    background: transparent url(../images/database_warning.png) no-repeat;
+}
+.ProcessUnit .process-list {
+    margin-bottom: 1em;
+}
+.ProcessUnit .process-list td {
+    vertical-align: middle;
+}
+.ProcessUnit .process-list table {
+    display: inline-block;
+}
+.ProcessUnit .process-list .detail {
+    font-size: 10px;
+}
+.diagram {
+    float: left;
+    width: 100%;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+.diagram-popup-div {
+    border: 2px solid #ccc;
+    background-color: #FFF;
+    filter: alpha(opacity=90);
+    -moz-opacity: .9;
+    opacity: .9;
+    padding: 12px;
+}
+table.diagram-popup-table td {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.diagram-title {
+    border-bottom: 1px solid #DFDDD1;
+    height: 45px;
+    font: 22px Arial, Helvetica, sans-serif;
+    color: #7A9AE0;
+    padding: 10px 10px 0;
+}
+.diagram-bottom {
+    border-bottom: 1px solid #DFDDD1;
+    height: 1px;
+    padding: 0 10px;
+}

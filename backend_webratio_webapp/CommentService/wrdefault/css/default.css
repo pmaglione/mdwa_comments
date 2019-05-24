@@ -1,0 +1,70 @@
+/*****************************************************************/
+/*  Style rules determining the default appearance of the style  */
+/*****************************************************************/
+
+/* WebRatio CSS classes DIVs */
+.plain {
+	display: inline;
+	clear: none;
+}
+
+/* Number values alignment */
+.integer, .float, .decimal {
+	text-align: right
+}
+
+/* "Select All" link */
+.selectAll {
+	width: 16px; height: 16px;
+	background: url('../../Resources/multicheckSelected.png') no-repeat center center;
+}
+
+/* "Unselect All" link */
+.unSelectAll {
+	width: 16px; height: 16px;
+	background: url('../../Resources/multicheckClear.png') no-repeat center center;
+}
+
+/* Field errors */
+.error ul {
+	margin: 0;
+}
+
+/* Highlight row */
+.highlight {
+	font-weight: bold;
+}
+
+.full-width {
+	width: 100%;
+}
+
+/* Fields rendered fully */
+.fullField .labelWrapper {
+	margin-bottom: 4px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.fullField .valueWrapper > * {
+	-moz-box-sizing: border-box; box-sizing: border-box;
+	width: 100%;
+}
+.fullField .valueWrapper > .cke_skin_kama {
+	width: 100% !important;
+}
+
+/* Attributes rendered fully */
+.fullAttr .labelWrapper {
+	margin-right: 1ex;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+/* Datepicker icon */
+.ui-datepicker-trigger {
+	cursor: pointer;
+	vertical-align: middle;
+	margin-left: 2px;
+}

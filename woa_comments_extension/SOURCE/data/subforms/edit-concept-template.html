@@ -1,0 +1,76 @@
+<form id="edit-concept-template-form">
+    <div class="navbar-brand pim-sidebar-header text-center" style="width:100%;">
+        <span id="concept-header-icon"></span> &nbsp;
+        <span id="concept-header-title"></span>
+    </div>       
+    <!-- :::::::::: NAME :::::::::: -->
+    <div class="form-group">
+        <label for="edit-concept-template-name" data-l10n-id="materializable_name"></label>
+        <input id="edit-concept-template-name" name="edit-concept-template-name" type="text" class="form-control" placeholder="E.g. Scholar Article" required="true"></input>
+    </div>
+    <!-- :::::::::: TAG :::::::::: -->
+    <div class="form-group">
+        <label for="edit-concept-template-tag" data-l10n-id="materializable_tag"></label>
+        <div class="input-group">
+            <span class="input-group-addon"><span class="glyphicon glyphicon-tag"></span></span>
+            <input type="text" class="form-control" id="edit-concept-template-tag" required="true"></input>
+        </div>
+    </div>
+    <!-- :::::::::: SAVE IN PIM -->  
+    <div class="form-group">
+        <a class="list-group-item" style="border:none; padding-left:0px;" onclick="">
+            <label for="saveInPim" onclick="function(evt){evt.stopPropagation();}">
+                <input id="saveInPim" type="checkbox" value="saveInPim" onclick="function(evt){evt.stopPropagation();}"></input>
+                <span class="custom-input-label" data-l10n-id="save_as_static_io"></span>
+            </label>
+        </a>
+    </div>       
+    <!-- :::::::::: XPATH :::::::::: --> 
+    <div class="form-group">
+        <label for="edit-concept-template-xpath" data-l10n-id="materializable_selector"></label>
+        <select id="edit-concept-template-xpath" class="form-control">
+        </select>
+    </div>
+    <!-- :::::::::: PREVIEW :::::::::: --> 
+    <div class="form-group">
+        <label for="preview-of-concept" data-l10n-id="materializable_preview"></label>
+        <div id="preview-of-concept" class="image-preview-container">
+            <img id="concept-preview-image" class="image-preview" /> 
+        </div>
+    </div>
+    <div class="">
+        <a href="" class="pull-right" style="font-size: 12px;color: blue;">   Advanced settings</a>
+    </div>
+
+    <!-- :::::::::: WEB SERVICE :::::::::: --> 
+    <div class="">
+        <label>Service:</label>
+        <input id="service_url" type="text" class="form-control" placeholder="E.g. http://service.com/method" required="true"></input>
+        <!--
+        <li class="list-unstyled">
+            <label>Select category:</label>
+            <select id="emp-category" type="button" class="btn btn-warning navbar-btn" >
+                <option value="seed">Seed</option>
+                <option value="fertilizer">Fertilizer</option>
+                <option value="pesticide">Pesticide</option>
+            </select>
+        </li>
+        -->
+    </div>
+    <nav> <!-- :::::::::: PAGINATION :::::::::: -->
+        <ul class="pager">
+            <li class="previous active">
+                <button type="button" class="btn btn-warning navbar-btn" onclick="window.sidebar.manageCTemplates();">
+                    <span class="glyphicon glyphicon-trash"></span>
+                    <span id="discard-materializable-label" class="pager-option-label" data-l10n-id="discard"></span>
+                </button>
+            </li>
+            <li class="next active">
+                <button id="save-concept" type="button" class="btn btn-warning navbar-btn" >
+                    <span data-l10n-id="save"></span>
+                    <span class="glyphicon glyphicon-floppy-disk"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</form>

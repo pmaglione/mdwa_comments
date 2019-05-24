@@ -1,0 +1,26 @@
+<!-- HEADING -->
+<form>
+    <div class="navbar-brand pim-sidebar-header text-center" style="width:100%;">
+        <span data-l10n-id="config_decorator_required_title"></span>
+    </div>  
+    <p class="instructions" data-l10n-id="config_decorator_required_instructions"></p>
+    <!-- ALTERNATIVES -->
+    <div id="decorator-required-props-list" class="list-group" style="box-shadow: none"></div>
+    <!-- PAGINATION -->
+    <nav>
+        <ul class="pager"> <!-- CAN ADD disabled TO THE ELEMENTS-->
+            <li class="previous active">
+                <button type="button" class="btn btn-warning navbar-btn" onclick="sidebar.loadView({ id:['manage-decorator', 'choose-decorator-messages']});">
+                    <span class="glyphicon glyphicon-arrow-left"></span>
+                    <span id="discard-materializable-label" class="pager-option-label" data-l10n-id="prev_step"></span>
+                </button>
+            </li>
+            <li class="next active">
+                <button id="save-concept" type="button" class="btn btn-warning navbar-btn" onclick="sidebar.saveDecoratorMappings('manageCTemplates');">
+                    <span data-l10n-id="finish"></span>
+                    <span class="glyphicon glyphicon-floppy-disk"></span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+</form>

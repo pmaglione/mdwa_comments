@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.ModelService" crc="Ny4yLjE1LjIwMTcwNjEzQ291bnRyeUlTT0N0eFBhcmFtR3JvdXBDdHhQYXJhbUxhbmd1YWdlSVNPQ3R4UGFyYW1Vc2VyQ3R4UGFyYW0=" enterpriseApplication="false">
+  <WebRatioVersion>7.2.18</WebRatioVersion>
+  <WebRatioBuildId>201903231300</WebRatioBuildId>
+  <URLFragment/>
+  <WebContainer httpPort="8080" httpsPort="8443" defaultApplicationEncoding="UTF-8" defaultServerEncoding="ISO-8859-1" useDefaultURLEncoding="false" serverName="" useAbsoluteUrl="false" httpRequestHelperClass="com.webratio.struts.DefaultHttpRequestHelper" maxUploadFileSize="12M" defaultCookieTimeout="30"/>
+  <WebModel defaultLoginPage="WebRatio_Default.login.jsp" defaultExpirePage="WRDefault_Default.expire.jsp" defaultErrorPage="WebRatio_Default.error.jsp">
+    <SiteView id="sv1" homePage="page3" name="CommentService" home="true" loginPage="WRDefault_Default.login.jsp" expirePage="WRDefault_Default.expire.jsp" errorPage="WRDefault_Default.error.jsp">
+      <Page id="page3" name="Create Product" loginPage="WRDefault_Default.login.jsp" expirePage="WRDefault_Default.expire.jsp" errorPage="WRDefault_Default.error.jsp"/>
+      <Page id="page2" name="Create Comment" loginPage="WRDefault_Default.login.jsp" expirePage="WRDefault_Default.expire.jsp" errorPage="WRDefault_Default.error.jsp"/>
+      <Page id="page1" name="Comments List" loginPage="WRDefault_Default.login.jsp" expirePage="WRDefault_Default.expire.jsp" errorPage="WRDefault_Default.error.jsp"/>
+    </SiteView>
+  </WebModel>
+  <SessionParameters>
+    <SessionParameter name="CountryISOCtxParam" type="string">CountryISOCtxParam</SessionParameter>
+    <SessionParameter name="GroupCtxParam" type="string">GroupCtxParam</SessionParameter>
+    <SessionParameter name="LanguageISOCtxParam" type="string">LanguageISOCtxParam</SessionParameter>
+    <SessionParameter name="UserCtxParam" type="string">UserCtxParam</SessionParameter>
+  </SessionParameters>
+  <ServiceDataProviders>
+    <CookieStorageProvider id="userCredentials" name="USER_CREDENTIALS" cookieName="USER_CREDENTIALS" encryptionKey="1K470K5BBD" _sel="t"/>
+  </ServiceDataProviders>
+  <LinkPreservedParameters>
+    <LinkPreservedParameter>boxed</LinkPreservedParameter>
+    <LinkPreservedParameter>fllbck</LinkPreservedParameter>
+  </LinkPreservedParameters>
+  <DefaultFileEncoding/>
+  <Statistics pages="3" units="8"/>
+  <AutoLoadServices>_i18n|_job.manager</AutoLoadServices>
+</Descriptor>

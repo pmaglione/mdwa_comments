@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Descriptor service="com.webratio.rtx.core.LayoutService">
+  <Resource name="WRDefault/humblesoftware-flotr2"/>
+  <Resource name="BUILTIN/wr-utils-supportscripts"/>
+  <Resource name="BUILTIN/jquery-ui-style"/>
+  <Resource name="WRDefault/wrdefault-bpm-style"/>
+  <Resource name="BUILTIN/wr-runtime">
+    <ContentScript xml:space="preserve">def wrAjaxDebugLevel = pageContext.getAttribute("wrAjaxDebugLevel")
+def url = content + ("full".equals(wrAjaxDebugLevel) ? "wr.debug.js" : "wr.js")
+if (!wrBoxed) {
+    url += "?createDocumentApp=true"
+}
+return url</ContentScript>
+  </Resource>
+  <Resource name="BUILTIN/wr-960gs-12"/>
+  <Resource name="BUILTIN/wr-ui-style"/>
+  <Resource name="BUILTIN/jquery-ui-datepicker-lang">
+    <ContentScript xml:space="preserve">def language = locale?.language ?: "en"
+return content + "jquery.ui.datepicker-${language}.js"</ContentScript>
+  </Resource>
+  <Resource name="BUILTIN/jsp-jstl-core"/>
+  <Resource name="BUILTIN/wr-960gs-16"/>
+  <Resource name="BUILTIN/jsp-jstl-format"/>
+  <Resource name="BUILTIN/jquery"/>
+  <Resource name="BUILTIN/wr-gs-responsive-24"/>
+  <Resource name="BUILTIN/wr-taglib-xls"/>
+  <Resource name="BUILTIN/richardson-timepicker-style"/>
+  <Resource name="BUILTIN/wr-browsercontrol-style"/>
+  <Resource name="WRDefault/wrdefault-style"/>
+  <Resource name="BUILTIN/cksource-ckeditor">
+    <ContentScript xml:space="preserve">return wrBaseURI + content</ContentScript>
+  </Resource>
+  <Resource name="WRDefault/wr-password-strengthness-js"/>
+  <Resource name="WRDefault/google-excanvas"/>
+  <Resource name="BUILTIN/wr-ui-gridsystem"/>
+  <Resource name="BUILTIN/struts-tags-html"/>
+  <Resource name="BUILTIN/wr-ui-gridresponsive"/>
+  <Resource name="BUILTIN/wr-gs-responsive-16"/>
+  <Resource name="WRDefault/wr-password-strengthness-css"/>
+  <Resource name="BUILTIN/wr-gs-responsive-12"/>
+  <Resource name="BUILTIN/wr-960gs-24"/>
+  <Resource name="BUILTIN/wr-ui-widgets"/>
+  <Resource name="BUILTIN/struts-tags-bean"/>
+  <Resource name="BUILTIN/richardson-timepicker"/>
+  <Resource name="BUILTIN/wr-taglib"/>
+  <Resource name="BUILTIN/richardson-timepicker-lang">
+    <ContentScript xml:space="preserve">def language = locale?.language ?: "en"
+return content + "jquery-ui-timepicker-${language}.js"</ContentScript>
+  </Resource>
+  <Resource name="BUILTIN/wr-calendar-utils"/>
+  <Resource name="BUILTIN/wr-taglib-report"/>
+  <Resource name="BUILTIN/jquery-ui"/>
+  <Resource name="BUILTIN/jsp-jstl-functions"/>
+</Descriptor>

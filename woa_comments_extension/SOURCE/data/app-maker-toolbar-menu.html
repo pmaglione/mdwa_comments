@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<style type="text/css">
+			body {
+			    overflow:hidden;
+			}
+			.list-item {
+				width: 100%;
+				border-bottom: 1px solid #D6D6D6;
+				padding: 5px;
+			}
+			.list-item input{
+				position: relative;
+				display: inline-block;
+				float: right;
+			}
+			.list-item:hover {
+				background-color: rgba(200, 200, 200, 0.3);
+			}
+			.list {
+				width: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			.list-item:last-child { 
+				border-bottom: none;
+			}
+			.list-item span{ 
+				padding-left: 12px;
+			}
+    	</style>
+    	<link href="lib/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="list">
+			<div class="list-item" onclick="addon.port.emit('toggleHarvestingSidebar', true);">
+				<i class="glyphicon glyphicon-home"></i><span data-l10n-id="main_menu_open_sidebar"></span>
+			</div>
+			<div class="list-item" onclick="this.children[0].click();">
+				<input type="checkbox" id="materializableSelection" onchange="addon.port.emit('toggleCTemplatesSelection', this.checked);"/> 
+				<i class="glyphicon glyphicon-hand-up"></i><span data-l10n-id="main_menu_enable_selection"></span>
+			</div>
+			<div class="list-item" onclick="addon.port.emit('toggleAppMakerSidebar', true);">
+				<i class="glyphicon glyphicon-sunglasses"></i><span data-l10n-id="main_menu_open_app_maker"></span>
+			</div>
+		</div>
+	</body>
+</html>

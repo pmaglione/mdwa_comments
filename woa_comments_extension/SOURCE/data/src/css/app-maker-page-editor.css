@@ -1,0 +1,89 @@
+body, html {
+  height: 100%;
+}
+.woa-top-left-floating-menu{
+    text-align: right;
+}
+.woa-augmenter-icon{
+    background:url('../img/menu.png') no-repeat left center;
+    height:25px;
+    width:28px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    /*border:1px solid #555;
+      width:50%;
+      margin:30px;*/
+}
+/*.woa-augmenter-icon:before{
+  content:"\2b";
+  font-family:"Glyphicons Halflings";
+  line-height:1;
+  margin:10px;
+  display:inline-block;
+}*/
+.app-maker-page-editor{
+	background: radial-gradient(#dbdbdb 15%, transparent 16%) 0 0, radial-gradient(white 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px !important;
+	background-color: #F5F5F5 !important;
+	background-size: 16px 16px !important;
+	padding: 20px;
+}
+.app-maker-page-container{
+	border-radius: 7px;
+	background: white;
+	width: 100%;
+	min-height: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding: 20px;
+}
+.woa-loading {
+    display:    block;
+    position:   fixed;
+    z-index:    9999999;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 ) 
+                url('../img/loading.gif') 
+                50% 50% 
+                no-repeat;
+}
+.woa-decorator-popup{
+    z-index: 9999999;
+    position:absolute;
+    display:block;
+    left:0px;
+    top:25px;
+    height:20px;
+    width:20px;
+    padding:0;
+    margin:0;
+    border:1px solid gray;
+    background-color:white;
+    font-weight:normal;
+    white-space:nowrap;
+    overflow: hidden;
+}
+.woa-decorator-popup .list-item {
+    font-size: 15px !important;
+    width: 100%;
+    border-bottom: 1px solid #D6D6D6;
+    padding: 5px;
+}
+.woa-decorator-popup .list-item input{
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+.woa-decorator-popup .list-item:hover {
+    background-color: rgba(200, 200, 200, 0.3);
+}
+.list {
+    width: 100%;
+}
+.woa-decorator-popup .list-item:last-child { 
+    border-bottom: none;
+}
+.woa-decorator-popup .list-item span{ 
+    padding-left: 12px;
+}

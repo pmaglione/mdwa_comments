@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <!-- JQUERY AND JQUERY UI -->
+        <link rel="stylesheet" href="src/css/app-maker-page-editor.css">
+        <link rel="stylesheet" href="lib/css/jquery-ui.min.css"></link>
+        <link rel="stylesheet" href="lib/css/jquery-ui.structure.min.css"></link>
+        <link rel="stylesheet" href="lib/css/jquery-ui.theme.min.css"></link>
+        <script type="text/javascript" src="lib/js/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="lib/js/jquery-ui-1.11.min.js"></script>
+        <!-- BOOTSTRAP -->
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-theme.min.css"></link>
+        <link rel="stylesheet" href="lib/css/bootstrap-tokenfield.css">
+        <link rel="stylesheet" href="lib/css/bootstrap-toggle.min.css">
+        <script type="text/javascript" src="lib/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap-tokenfield.js"></script>
+        <script type="text/javascript" src="lib/js/bootstrap-toggle.min.js"></script>
+        <!-- TAG IT -->
+        <link rel="stylesheet" href="lib/css/tag-it.css"></link>
+        <script type="text/javascript" src="lib/js/tag-it.js"></script>
+        <!-- XPATH MANAGEMENT (JUST FOR SIDEBAR SIDE) -->
+        <script type="text/javascript" src="lib/js/xpathManagement.js"></script>
+        <script type="text/javascript">            
+            //This prevents to load the extenral context' doc
+            window.addEventListener("dragover",function(e){
+              e = e || event;
+              e.preventDefault();
+              e.stopImmediatePropagation();
+            },false);
+            window.addEventListener("drop",function(e){
+                e = e || event;
+                e.preventDefault();
+                window.dropped = e.target;
+                //console.log("DROP: ", e.target);
+            },false);
+            window.insertElementIntoPageEditor = function(dragged){
+                if(window.dropped){
+                    window.dropped.appendChild(dragged);
+                }
+            }
+            /*window.insertInfoObjectIntoPageEditor = function(dragged){
+                console.log(dragged);
+                if(window.dropped){
+                    window.dropped.appendChild(dragged);
+                }
+            }*/            
+        </script>
+    </head>
+    <body class="app-maker-page-editor">
+		<div id="app-maker-page-container" class="app-maker-page-container">                  
+        </div>
+	</body>
+</html>
